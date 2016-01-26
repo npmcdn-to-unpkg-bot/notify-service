@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('inspinia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap' ])
+angular.module('inspinia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'toaster' ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
@@ -9,17 +9,12 @@ angular.module('inspinia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
             url: "/index",
             templateUrl: "components/common/content.html"
         })
-        .state('index.main', {
-            url: "/main",
-            templateUrl: "app/main/main.html",
-            data: { pageTitle: 'Example view' }
-        })
-        .state('index.minor', {
-            url: "/minor",
-            templateUrl: "app/minor/minor.html",
-            data: { pageTitle: 'Example view' }
+        .state('index.toastr', {
+            url: "/toastr",
+            templateUrl: "app/toastr/toastr.html",
+            data: { pageTitle: 'Toastr Notify' }
         });
 
-    $urlRouterProvider.otherwise('/index/main');
+    $urlRouterProvider.otherwise('/index/toastr');
   })
 ;
