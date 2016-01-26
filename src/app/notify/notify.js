@@ -1,4 +1,6 @@
-function toastrCtrl($scope, toaster){
+'use strict';
+
+function NotifyController($scope, toaster){
 
     $scope.demo1 = function(){
         toaster.success({ body:"Hi, welcome to Inspinia. This is example of Toastr notification box."});
@@ -35,5 +37,5 @@ function toastrCtrl($scope, toaster){
  * Pass all functions into module
  */
 angular
-    .module('inspinia')
-    .controller('toastrCtrl', toastrCtrl);
+    .module('notification')
+    .controller('NotifyController', NotifyController);
