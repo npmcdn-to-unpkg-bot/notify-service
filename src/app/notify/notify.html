@@ -2,18 +2,7 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-9">
-        <h2>Toastr notification</h2>
-        <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                Miscellaneous
-            </li>
-            <li class="active">
-                <strong>Toastr notification</strong>
-            </li>
-        </ol>
+        <h2>Notification Demo</h2>
     </div>
 </div>
 <div class="wrapper wrapper-content animated fadeInRight" ng-controller="NotifyController">
@@ -21,40 +10,29 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox">
-                <div class="ibox-title">
-                    <h5>Toastr notification</h5>
-                    <div ibox-tools></div>
-                </div>
                 <div class="ibox-content">
-
-                    <p>
-                        AngularJS Toaster is an AngularJS port of the toastr library.
-                        <strong>toastr</strong> is a Javascript library for non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
-                    </p>
-                    <p>
-                        Unlike toastr, this library relies on ngAnimate and CSS3 transformations for optional animations. To include and use animations, add a reference to angular-animate.min.js and add ngAnimate as a dependency alongside toaster.
-                    </p>
-
-                    <h4>Basic example</h4>
 
                     <div class="row">
 
 
-                        <div class="col-lg-3">
-                            <p>Display a success toast, with no title</p>
-                            <button class="btn btn-primary" ng-click="demo1()">Success</button>
-                        </div>
-                        <div class="col-lg-3">
+                        <!--<div class="col-lg-3">-->
+                            <!--<p>Display a success toast, with no title</p>-->
+                            <!--<button class="btn btn-primary" ng-click="demo1()">Success</button>-->
+                        <!--</div>-->
+                        <div class="col-lg-3 m-b">
+                            <h4>Warning Message</h4>
                             <p>Display a warning toast with title</p>
-                            <button class="btn btn-warning" ng-click="demo2()">Success</button>
+                            <button class="btn btn-warning" ng-click="demo2()">Warning</button>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 m-b">
+                            <h4>Info Message</h4>
                             <p>Display a info toast with close button</p>
-                            <button class="btn btn-info" ng-click="demo3()">Success</button>
+                            <button class="btn btn-info" ng-click="demo3()">Info</button>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 m-b">
+                            <h4>Error Message</h4>
                             <p>Display a error toast with close button and timeout set to 600 ms</p>
-                            <button class="btn btn-danger" ng-click="demo4()">Success</button>
+                            <button class="btn btn-danger" ng-click="demo4()">Error</button>
                         </div>
 
                     </div>
